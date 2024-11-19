@@ -3,7 +3,7 @@ import './App.css';
 import { useState } from 'react';
 import Web3 from 'web3';
 
-const ADDRESS = "0x20EBc9559b4429b483FD8fdd6845FCf5CC069F60";
+const ADDRESS = "0x500192509beb6f53faa6e17b68d245a508a22d15";
 const ABI = [{"inputs":[{"internalType":"uint256","name":"startingPoint","type":"uint256"},{"internalType":"string","name":"startingMessage","type":"string"}],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[],"name":"decreasingNumber","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"getNumber","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"increasingNumber","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"message","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"newMessage","type":"string"}],"name":"setMessage","outputs":[],"stateMutability":"nonpayable","type":"function"}];
 function App() {
   const [number, setNumber] = useState("none");
